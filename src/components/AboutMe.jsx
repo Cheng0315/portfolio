@@ -3,8 +3,12 @@ import '../css/aboutMe.css'
 function AboutMe() {
   return (
     <div className='about-me container'>
-      <p>Full-stack web developer with a passion for building fast, efficient, and user-friendly web application. 
-        Thrive on team-building and excited about contributing to innovative technology solutions and empowering users.</p>
+      <h1>About Me</h1>
+      <p>
+        I'm a full-stack web developer based in Minneapolis-Saint Paul. 
+        I enjoy turning complex problems into simple, beautiful, and easy to read code.
+        When not coding, you'll find me cooking, playing the guitar, or jogging in the park.
+      </p>
     </div>
   );
 }
