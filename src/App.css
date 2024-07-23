@@ -1,0 +1,7 @@
+html, body, #app, #root, header{
+  height: 100%;
+}
+
+html, body, #app, #root, .intro-container, header {
+  min-height: 500px;
+}

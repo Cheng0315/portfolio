@@ -5,9 +5,11 @@ import Intro from './components/Intro'
 
 function App() {
   return (
-    <div>
+    <div id='app'>
       <NavigationBar />
-      <Intro />
+      <header>
+        <Intro />
+      </header>
       <AboutMe />
     </div>
   )

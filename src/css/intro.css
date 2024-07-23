@@ -1,0 +1,21 @@
+.intro-container {
+  display: flex;
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/27/19/00/coffee-1283672_960_720.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-container .intro-content{
+  align-self: center;
+  color: white !important;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.intro-content h1{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 700;
+  font-size: 50px;
+}
