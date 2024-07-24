@@ -2,6 +2,7 @@ import './App.css'
 import NavigationBar from './components/NavigationBar'
 import AboutMe from './components/AboutMe'
 import Intro from './components/Intro'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Intro />
       </header>
       <AboutMe />
+      <Footer />
     </div>
   )
 }
