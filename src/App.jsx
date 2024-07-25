@@ -12,7 +12,9 @@ function App() {
         <Intro />
       </header>
       <AboutMe />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
