@@ -1,8 +1,9 @@
 import './App.css'
-import NavigationBar from './components/NavigationBar'
-import AboutMe from './components/AboutMe'
-import Intro from './components/Intro'
-import Footer from './components/Footer'
+import NavigationBar from './components/navigationBar'
+import AboutMe from './components/aboutMe'
+import Intro from './components/intro'
+import Footer from './components/footer'
+import Skills from './components/skills'
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
       <header>
         <Intro />
       </header>
-      <AboutMe />
+      <main>
+        <Skills />
+        <AboutMe />
+      </main>
       <footer>
         <Footer />
       </footer>
