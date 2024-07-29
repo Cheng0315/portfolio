@@ -1,7 +1,7 @@
 function Skills() {
   
   return (
-    <div class='container'>
+    <div className='container'>
       <h1>Technical Skills</h1>
       <h6>JAVASCRIPT</h6>
       <h6>TYPESCRIPT</h6>
@@ -10,7 +10,6 @@ function Skills() {
       <h6>NODEJS</h6>
       <h6>EXPRESSJS</h6>
       <h6>REACT</h6>
-      <h6>REDUX</h6>
       <h6>HTML5</h6>
       <h6>CSS3</h6>
       <h6>JQUERY</h6>
