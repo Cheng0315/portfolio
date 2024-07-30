@@ -1,0 +1,34 @@
+.technical-skills h6 {
+  color: #444444;
+  font-size: 15px;
+}
+
+.dev-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 6px;
+}
+
+.dev-logos h6 {
+  text-align: center;
+}
+
+.dev-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.dev-logos img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 6px;
+  align-self: center;
+}
+
+.dev-logos a {
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
