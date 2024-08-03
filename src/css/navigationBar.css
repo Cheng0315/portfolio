@@ -1,0 +1,38 @@
+nav a {
+  color: white !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+nav {
+  border-bottom: 1px solid white!important;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.navbar-brand > a {
+  margin-right: 7px;
+  display: inline-block;
+}
+
+.navbar-brand svg {
+  color: #ff0047;
+}
+
+.navbar-brand a{
+  text-decoration: none;
+}
