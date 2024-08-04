@@ -2,3 +2,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.fa-phone {
+  margin-right: 4px;
+}
+
+.fa-envelope {
+  margin-right: 8px;
+}
+
+.fa-location-dot {
+  margin-left: 3px;
+  margin-right: 9px;
+}

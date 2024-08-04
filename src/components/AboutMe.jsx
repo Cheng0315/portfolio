@@ -1,4 +1,6 @@
 import '../css/aboutMe.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 function AboutMe() {
   return (
@@ -12,9 +14,9 @@ function AboutMe() {
       <p>Interested in working together? We should queue up a chat. I'll buy the coffee.</p>
       <div className='contact'>
         <h1>Contact</h1>
-        <p className='phone'> Phone: (559) 286-6435</p>
-        <p className='email'> Email: csalvue@gmail.com</p>
-        <p className='location'> Location: Minneapolis - Saint Paul</p>
+        <p className='phone'> <FontAwesomeIcon icon={faPhone} className='fa-rotate-90'/> Phone: (559) 286-6435</p>
+        <p className='email'> <FontAwesomeIcon icon={faEnvelope} />Email: csalvue@gmail.com</p>
+        <p className='location'> <FontAwesomeIcon icon={faMapMarkerAlt} />Location: Minneapolis - Saint Paul</p>
       </div>
     </div>
   );
