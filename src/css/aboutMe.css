@@ -1,6 +1,38 @@
 .about-me {
   display: flex;
+}
+
+.about-me .img-and-social{
+  display: flex;
   flex-direction: column;
+}
+
+.img-and-social > img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.social a {
+  transition: 0.2s ease;
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.13, 1.13);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social .fa-linkedin {
+  color: #0073b0;
+}
+
+.social .fa-github {
+  color: #24292e;
 }
 
 .fa-phone {
@@ -14,4 +46,134 @@
 .fa-location-dot {
   margin-left: 3px;
   margin-right: 9px;
+}
+
+
+
+@media (max-width: 767px) {
+  .about-me h1 {
+    text-align: center;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-and-social > img {
+    width:140px;
+    height:140px;
+  }
+
+  .social {
+    width:140px;
+  }
+  
+  .about-me {
+    justify-content: center;
+  }
+
+  .img-and-social {
+    flex-basis: 24%;
+    align-self: center;
+    margin-bottom: 15px;
+  }
+
+  .about-me-info {
+    flex-basis: 66%;
+  }
+
+  .about-me-container {
+    padding: 70px 0 40px;
+  } 
+
+  .social a {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-and-social > img {
+    width:140px;
+    height:140px;
+  }
+
+  .social {
+    width:140px;
+  }
+  
+  .about-me {
+    justify-content: center;
+  }
+
+  .img-and-social {
+    flex-basis: 24%;
+  }
+
+  .about-me-info {
+    flex-basis: 66%;
+  }
+
+  .about-me-container {
+    padding: 60px 0 45px;;
+  } 
+
+  .social a {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-me {
+    justify-content: center;
+  }
+
+  .img-and-social {
+    flex-basis: 18%;
+  }
+
+  .about-me-info {
+    flex-basis: 77%;
+  }
+
+  .about-me-container {
+    padding: 60px 0 45px;
+  } 
+
+  .social a {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-and-social > img {
+    width:140px;
+    height:140px;
+  }
+
+  .social {
+    width:140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-me {
+    justify-content: center;
+  }
+
+  .img-and-social {
+    flex-basis: 16%;
+  }
+
+  .about-me-info {
+    flex-basis: 79%;
+  }
+
+  .about-me-container {
+    padding: 105px 0;
+  } 
+
+  .social a {
+    margin: 0 5px;
+  }
 }
