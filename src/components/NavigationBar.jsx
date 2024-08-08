@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 import '../css/navigationBar.css'
@@ -18,11 +19,11 @@ function NavigationBar() {
             </a>
           </div>
           <Nav className="ml-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
+            <AnchorLink href='#intro' className='nav-link'>HOME</AnchorLink>
+            <Nav.Link href="#projects">PROJECTS</Nav.Link>
+            <AnchorLink href='#technical-skills' className='nav-link' offset='70'>SKILLS</AnchorLink>
+            <AnchorLink href='#contact' className='nav-link' offset='70'>CONTACT</AnchorLink>
+            <Nav.Link href="#resume">RESUME</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
