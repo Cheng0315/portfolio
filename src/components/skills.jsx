@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section id='technical-skills' className='technical-skills'>
       <div className='container'>
-        <h1>Technical Skills</h1>
+        <h1 className='skills-header'>Technical Skills</h1>
         <div className='dev-logos-container'>
           <div className="dev-logos">
             <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' rel="noopener noreferrer">
@@ -61,6 +61,12 @@ function Skills() {
               <h6>REDUX</h6>
             </a>
           </div>
+          <div className='dev-logos'>
+            <a href='https://angular.dev/' target='_blank' rel="noopener noreferrer">
+              <img src='https://cdn.svgporn.com/logos/angular.svg' alt='angular'/>
+              <h6>ANGULAR</h6>
+            </a>
+          </div>
           <div className='dev-logos' rel="noopener noreferrer">
             <a href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5'>
               <img src='https://cdn.svgporn.com/logos/html-5.svg' alt='html5'/>
@@ -104,6 +110,12 @@ function Skills() {
             </a>
           </div>
           <div className='dev-logos'>
+            <a href='https://www.mongodb.com/' target='_blank' rel="noopener noreferrer">
+              <img src='https://cdn.svgporn.com/logos/mongodb.svg' alt='mongodb'/>
+              <h6>MONGODB</h6>
+            </a>
+          </div>
+          <div className='dev-logos'>
             <a href='https://git-scm.com/' target='_blank' rel="noopener noreferrer">
               <img src='https://cdn.svgporn.com/logos/git-icon.svg' alt='git'/>
               <h6>GIT</h6>
@@ -113,18 +125,6 @@ function Skills() {
             <a href='https://github.com/' target='_blank' rel="noopener noreferrer">
               <img src='https://cdn.svgporn.com/logos/github-icon.svg' alt='github'/>
               <h6>GITHUB</h6>
-            </a>
-          </div>
-          <div className='dev-logos'>
-            <a href='https://angular.dev/' target='_blank' rel="noopener noreferrer">
-              <img src='https://cdn.svgporn.com/logos/angular.svg' alt='angular'/>
-              <h6>ANGULAR</h6>
-            </a>
-          </div>
-          <div className='dev-logos'>
-            <a href='https://www.mongodb.com/' target='_blank' rel="noopener noreferrer">
-              <img src='https://cdn.svgporn.com/logos/mongodb.svg' alt='mongodb'/>
-              <h6>MONGODB</h6>
             </a>
           </div>
         </div>
