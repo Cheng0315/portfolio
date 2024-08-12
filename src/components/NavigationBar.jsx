@@ -9,7 +9,7 @@ import '../css/navigationBar.css'
 function NavigationBar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar bg="dark" expand="lg">
         <Container>
           <div className="navbar-brand">
             <a href="/"><FontAwesomeIcon icon={faCodeBranch} size="3x"/></a>
@@ -18,13 +18,16 @@ function NavigationBar() {
               <div className="title">FULL STACK WEB DEVELOPER</div>
             </a>
           </div>
-          <Nav className="ml-auto">
-            <AnchorLink href='#intro' className='nav-link'>HOME</AnchorLink>
-            <Nav.Link href="#projects">PROJECTS</Nav.Link>
-            <AnchorLink href='#technical-skills' className='nav-link' offset='70'>SKILLS</AnchorLink>
-            <AnchorLink href='#contact' className='nav-link' offset='70'>CONTACT</AnchorLink>
-            <Nav.Link href="#resume">RESUME</Nav.Link>
-          </Nav>
+            <Nav className="ml-auto">
+              <Navbar.Collapse id="basic-navbar-nav">
+                <AnchorLink href='#intro' className='nav-link'>HOME</AnchorLink>
+                <Nav.Link href="#projects">PROJECTS</Nav.Link>
+                <AnchorLink href='#technical-skills' className='nav-link' offset='70'>SKILLS</AnchorLink>
+                <AnchorLink href='#contact' className='nav-link' offset='70'>CONTACT</AnchorLink>
+                <Nav.Link href="#resume">RESUME</Nav.Link>
+              </Navbar.Collapse>
+            </Nav>
+          
         </Container>
       </Navbar>
     </>
