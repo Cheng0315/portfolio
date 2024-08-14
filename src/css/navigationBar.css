@@ -36,3 +36,13 @@ nav {
 .navbar-brand a{
   text-decoration: none;
 }
+
+.side-panel-bars-icon {
+  color:white;
+}
+
+@media (min-width: 992px) {
+  .side-panel.open, .backdrop, .fa-bars{
+    display: none;
+  }
+}
