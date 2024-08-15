@@ -41,6 +41,10 @@ nav {
   color:white;
 }
 
+.side-panel-bars-icon {
+  margin-left: auto;
+}
+
 @media (min-width: 992px) {
   .side-panel.open, .backdrop, .fa-bars{
     display: none;

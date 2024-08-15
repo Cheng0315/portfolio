@@ -1,0 +1,53 @@
+.side-panel {
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.side-panel a {
+  color: #444444 !important;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.side-panel-links {
+  margin-left: 17px;
+}
+
+.side-panel-links div {
+  margin: 15px 0;
+}
+
+.side-panel.open {
+  transform: translateX(0)
+}
+
+.side-panel-logo {
+  display: flex;
+}
+
+.side-panel-logo .info div{
+  margin: 0;
+}
+
+.side-panel-logo .fa-code-branch {
+  margin-right: 8px;
+  color: #ff0047;
+}
+
+.side-panel-anchor-links {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .side-panel.open, .fa-bars{
+    display: none;
+  }
+}
