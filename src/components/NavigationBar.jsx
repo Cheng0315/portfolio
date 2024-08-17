@@ -4,21 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeBranch, faBars } from '@fortawesome/free-solid-svg-icons';
-import SidePanel from './sidePanel';
-import { useState } from 'react';
 import '../css/navigationBar.css';
 
-function NavigationBar() {
-  const [sidePanel, setSidePanel] = useState(false);
-
-  function sidePanelHandler() {
-    setSidePanel(!sidePanel);
-  }
-
-  function closeSidePanel() {
-    setSidePanel(false);
-  }
-
+function NavigationBar(props) {
 
   return (
     <>
@@ -31,8 +19,7 @@ function NavigationBar() {
               <div className="title">FULL STACK WEB DEVELOPER</div>
             </a>
           </div>
-          <FontAwesomeIcon icon={faBars} className="side-panel-bars-icon" size="2x" onClick={sidePanelHandler}/>
-          <SidePanel closeSidePanel={closeSidePanel} sidePanel={sidePanel}/>
+          <FontAwesomeIcon icon={faBars} className="side-panel-bars-icon" size="2x" onClick={props.sidePanelHandler}/>
           <Nav className="ml-auto">
             <Navbar.Collapse id="basic-navbar-nav">
               <AnchorLink href='#intro' className='nav-link'>HOME</AnchorLink>

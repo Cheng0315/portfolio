@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 992px) {
-  .side-panel.open, .fa-bars{
+  .side-panel.open, .fa-bars, .backdrop{
     display: none;
   }
 }

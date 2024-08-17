@@ -4,11 +4,25 @@ import AboutMe from './components/aboutMe';
 import Intro from './components/intro';
 import Footer from './components/footer';
 import Skills from './components/skills';
+import SidePanel from './components/sidePanel';
+import { useState } from 'react';
+
 
 function App() {
+  const [sidePanel, setSidePanel] = useState(false);
+
+  function sidePanelHandler() {
+    setSidePanel(!sidePanel);
+  }
+
+  function closeSidePanel() {
+    setSidePanel(false);
+  }
+
   return (
     <div id='app'>
-      <NavigationBar />
+      <NavigationBar sidePanelHandler={sidePanelHandler}/>
+      <SidePanel closeSidePanel={closeSidePanel} sidePanel={sidePanel}/>
       <header>
         <Intro />
       </header>
