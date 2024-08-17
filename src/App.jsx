@@ -10,6 +10,11 @@ import { useState } from 'react';
 
 function App() {
   const [sidePanel, setSidePanel] = useState(false);
+  let backdrop; 
+  
+  if (sidePanel) {
+    backdrop = <div className='backdrop' onClick={closeSidePanel}/> 
+  }
 
   function sidePanelHandler() {
     setSidePanel(!sidePanel);
@@ -27,6 +32,7 @@ function App() {
         <Intro />
       </header>
       <main>
+        {backdrop}
         <Skills />
         <AboutMe />
       </main>
