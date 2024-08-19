@@ -6,6 +6,7 @@ function Skills() {
     <section id='technical-skills' className='technical-skills'>
       <div className='container'>
         <h1 className='skills-header'>Technical Skills</h1>
+        <div className='title-hr'></div>
         <div className='dev-logos-container'>
           <div className="dev-logos">
             <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' rel="noopener noreferrer">

@@ -18,3 +18,14 @@ html, body, #app, #root, .intro-container, header {
   font-weight: 400;
 }
 
+.title-hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: auto;
+  padding: 0;
+  width: 230px;
+  opacity: 0.3;
+}
+
