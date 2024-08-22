@@ -9,29 +9,27 @@ import '../css/navigationBar.css';
 function NavigationBar(props) {
 
   return (
-    <>
-      <Navbar bg="dark" expand="lg">
-        <Container>
-          <div className="navbar-brand">
-            <a href="/"><FontAwesomeIcon icon={faCodeBranch} size="3x"/></a>
-            <a href="/" className="info">
-              <div className="name">CHENG VUE</div>
-              <div className="title">FULL STACK WEB DEVELOPER</div>
-            </a>
-          </div>
-          <FontAwesomeIcon icon={faBars} className="side-panel-bars-icon" size="2x" onClick={props.sidePanelHandler}/>
-          <Nav className="ml-auto">
-            <Navbar.Collapse id="basic-navbar-nav">
-              <AnchorLink href='#intro' className='nav-link'>HOME</AnchorLink>
-              <Nav.Link href="#projects">PROJECTS</Nav.Link>
-              <AnchorLink href='#technical-skills' className='nav-link' offset='70'>SKILLS</AnchorLink>
-              <AnchorLink href='#contact' className='nav-link' offset='70'>CONTACT</AnchorLink>
-              <Nav.Link href="#resume">RESUME</Nav.Link>
-            </Navbar.Collapse>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+    <Navbar bg="dark" expand="lg">
+      <Container>
+        <div className="navbar-brand">
+          <a href="/"><FontAwesomeIcon icon={faCodeBranch} size="3x"/></a>
+          <a href="/" className="info">
+            <div className="name">CHENG VUE</div>
+            <div className="title">FULL STACK WEB DEVELOPER</div>
+          </a>
+        </div>
+        <FontAwesomeIcon icon={faBars} className="side-panel-bars-icon" size="2x" onClick={props.sidePanelHandler}/>
+        <Nav className="ml-auto">
+          <Navbar.Collapse id="basic-navbar-nav">
+            <AnchorLink href='#intro' className='nav-link home-fade'>HOME</AnchorLink>
+            <Nav.Link href="#projects" className='nav-link projects-fade'>PROJECTS</Nav.Link>
+            <AnchorLink href='#technical-skills' className='nav-link skills-fade' offset='70'>SKILLS</AnchorLink>
+            <AnchorLink href='#contact' className='nav-link contact-fade' offset='70'>CONTACT</AnchorLink>
+            <Nav.Link href="#resume" className='nav-link resume-fade'>RESUME</Nav.Link>
+          </Navbar.Collapse>
+        </Nav>
+      </Container>
+    </Navbar>
   );
 }
 
