@@ -11,7 +11,7 @@ function NavigationBar(props) {
   return (
     <Navbar bg="dark" expand="lg">
       <Container>
-        <div className="navbar-brand">
+        <div className="navbar-brand brand-fade">
           <a href="/"><FontAwesomeIcon icon={faCodeBranch} size="3x"/></a>
           <a href="/" className="info">
             <div className="name">CHENG VUE</div>
