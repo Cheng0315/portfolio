@@ -61,32 +61,24 @@ nav {
   }
 }
 
-.home-fade {
+.nav-link {
   visibility: hidden;
   animation: fade-in-top 1s forwards;
 }
 
-.projects-fade {
-  visibility: hidden;
-  animation: fade-in-top 1s forwards;
+#projects-fade {
   animation-delay: 0.1s;
 }
 
-.skills-fade {
-  visibility: hidden;
-  animation: fade-in-top 1s forwards;
+#skills-fade {
   animation-delay: 0.2s;
 }
 
-.contact-fade {
-  visibility: hidden;
-  animation: fade-in-top 1s forwards;
+#contact-fade {
   animation-delay: 0.3s;
 }
 
-.resume-fade {
-  visibility: hidden;
-  animation: fade-in-top 1s forwards;
+#resume-fade {
   animation-delay: 0.4s;
 }
 

@@ -21,11 +21,11 @@ function NavigationBar(props) {
         <FontAwesomeIcon icon={faBars} className="side-panel-bars-icon" size="2x" onClick={props.sidePanelHandler}/>
         <Nav className="ml-auto">
           <Navbar.Collapse id="basic-navbar-nav">
-            <AnchorLink href='#intro' className='nav-link home-fade'>HOME</AnchorLink>
-            <Nav.Link href="#projects" className='nav-link projects-fade'>PROJECTS</Nav.Link>
-            <AnchorLink href='#technical-skills' className='nav-link skills-fade' offset='70'>SKILLS</AnchorLink>
-            <AnchorLink href='#contact' className='nav-link contact-fade' offset='70'>CONTACT</AnchorLink>
-            <Nav.Link href="#resume" className='nav-link resume-fade'>RESUME</Nav.Link>
+            <AnchorLink href='#intro' id="home-fade" className='nav-link'>HOME</AnchorLink>
+            <Nav.Link href="#projects" id="projects-fade" className='nav-link'>PROJECTS</Nav.Link>
+            <AnchorLink href='#technical-skills' id="skills-fade" className='nav-link' offset='70'>SKILLS</AnchorLink>
+            <AnchorLink href='#contact' id="contact-fade" className='nav-link' offset='70'>CONTACT</AnchorLink>
+            <Nav.Link href="#resume" id="resume-fade" className='nav-link'>RESUME</Nav.Link>
           </Navbar.Collapse>
         </Nav>
       </Container>
