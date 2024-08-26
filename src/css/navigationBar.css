@@ -45,11 +45,6 @@ nav {
   margin-left: auto;
 }
 
-.brand-fade {
-  visibility: hidden;
-  animation: fade-in-center 2s forwards;
-}
-
 @keyframes fade-in-center {
   from {
     opacity: 0;
@@ -57,6 +52,24 @@ nav {
   }
   to {
     opacity: 1;
+    visibility: visible;
+  }
+}
+
+.brand-fade {
+  visibility: hidden;
+  animation: fade-in-center 2s forwards;
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
     visibility: visible;
   }
 }
@@ -80,19 +93,6 @@ nav {
 
 #resume-fade {
   animation-delay: 0.4s;
-}
-
-@keyframes fade-in-top {
-  from {
-    opacity: 0;
-    transform: translateY(-25px);
-    visibility: visible;
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-    visibility: visible;
-  }
 }
 
 @media (min-width: 992px) {
