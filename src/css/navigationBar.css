@@ -45,6 +45,16 @@ nav {
   margin-left: auto;
 }
 
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: 0.4s ease;
+}
+
+.navbar-colored {
+  background-color: #2e2e2b !important;
+  transition: 0.4s ease;
+}
+
 @keyframes fade-in-center {
   from {
     opacity: 0;

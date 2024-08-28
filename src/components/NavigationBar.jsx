@@ -5,11 +5,36 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeBranch, faBars } from '@fortawesome/free-solid-svg-icons';
 import '../css/navigationBar.css';
+import { useEffect, useState } from 'react';
 
 function NavigationBar(props) {
 
+  const [topOfPage, setTopOfPage] = useState(true);
+  
+  useEffect(() => {
+    function handleNavBarTransparency() {
+      const windowIsOnTopOfPage = window.scrollY < 1;
+
+      if (windowIsOnTopOfPage !== topOfPage) {
+        setTopOfPage(windowIsOnTopOfPage);
+      }
+    }
+
+    document.addEventListener('scroll', handleNavBarTransparency);
+
+    return () => {
+      document.removeEventListener('scroll', handleNavBarTransparency);
+    };
+  }, [topOfPage]);
+
+  let navbarColor = 'fixed-top navbar-transparent';
+
+  if (topOfPage === false) {
+    navbarColor = 'fixed-top navbar-colored';
+  }
+
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="dark" expand="lg" className={navbarColor}>
       <Container>
         <div className="navbar-brand brand-fade">
           <a href="/"><FontAwesomeIcon icon={faCodeBranch} size="3x"/></a>
