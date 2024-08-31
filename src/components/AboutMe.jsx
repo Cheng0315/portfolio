@@ -20,7 +20,7 @@ function AboutMe() {
             </div>
           </div>
           <div className='about-me-info'>
-            <h1>About Me</h1>
+            <h1>About Me</h1>  
             <p>
               I'm a full-stack web developer based in Minneapolis-Saint Paul. 
               I enjoy turning complex problems into simple, beautiful, and easy to read code.
