@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section id='technical-skills' className='technical-skills'>
       <div className='container'>
-        <h1 className='skills-header'>Technical Skills</h1>
+        <h1 className='skills-header dev-logos'>Technical Skills</h1>
         <div className='title-hr'></div>
         <div className='dev-logos-container'>
           <div id="js-logo" className="dev-logos">

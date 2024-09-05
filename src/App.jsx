@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Skills from './components/skills';
 import SidePanel from './components/sidePanel';
 import { useState } from 'react';
+import FadeInSection from './components/fadeInSection';
 
 
 function App() {
@@ -33,11 +34,17 @@ function App() {
       </header>
       <main>
         {backdrop}
-        <Skills />
-        <AboutMe />
+        <FadeInSection>
+          <Skills />
+        </FadeInSection>
+        <FadeInSection>
+          <AboutMe />
+        </FadeInSection>
       </main>
       <footer>
+      <FadeInSection>
         <Footer />
+      </FadeInSection>
       </footer>
     </div>
   )
