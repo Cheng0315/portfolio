@@ -47,97 +47,99 @@
   }
 }
 
-.skills-header {
-  visibility: hidden;
-  animation: logos-fade-in 2s forwards;
-  animation-delay: 0.65s;
+.dev-logos {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.dev-logos {
-  display: flex;
-  justify-content: center;
-  visibility: hidden;
-  animation: logos-fade-in 2s forwards;
+.fade-in-section.is-visible .dev-logos {
+  opacity: 1;
+  transform: none;
+}
+
+.skills-header {
+  transition-delay: 0.65s;
 }
 
 #js-logo {
-  animation-delay: 0.65s;
+  transition-delay: 0.65s;
 }
 
 #typescript-logo {
-  animation-delay: 0.70s;
+  transition-delay: 0.80s;
 }
 
 #python-logo {
-  animation-delay: 0.75s;
+  transition-delay: 0.95s;
 }
 
 #java-logo {
-  animation-delay: 0.80s;
+  transition-delay: 1.10s;
 }
 
 #springBoot-logo {
-  animation-delay: 0.85s;
+  transition-delay: 1.25;
 }
 
 #nodejs-logo {
-  animation-delay: 0.90s;
+  transition-delay: 1.40s;
 }
 
 #express-logo {
-  animation-delay: 0.95s;
+  transition-delay: 1.55s;
 }
 
 #react-logo {
-  animation-delay: 1s;
+  transition-delay: 1.70s;
 }
 
 #redux-logo {
-  animation-delay: 1.05s;
+  transition-delay: 1.85s;
 }
 
 #angular-logo {
-  animation-delay: 1.1s;
+  transition-delay: 2s;
 }
 
 #html5-logo {
-  animation-delay: 1.15s;
+  transition-delay: 2.15s;
 }
 
 #css3-logo {
-  animation-delay: 1.2s;
+  transition-delay: 2.30s;
 }
 
 #jquery-logo {
-  animation-delay: 1.25s;
+  transition-delay: 2.45s;
 }
 
 #tailwind-logo {
-  animation-delay: 1.3s;
+  transition-delay: 2.60s;
 }
 
 #bootstrap-logo {
-  animation-delay: 1.35s;
+  transition-delay: 2.75s;
 }
 
 #pg-logo {
-  animation-delay: 1.4s;
+  transition-delay: 2.90s;
 }
 
 #mysql-logo {
-  animation-delay: 1.45s;
+  transition-delay: 3.05s;
 }
 
 #mongodb-logo {
-  animation-delay: 1.5s;
+  transition-delay: 3.20s;
 }
 
 #git-logo {
-  animation-delay: 1.55s;
+  transition-delay: 3.35s;
 }
 
 #github-logo {
-  animation-delay: 1.6s;
+  transition-delay: 3.50s;
 }
 
 @media (max-width: 374px) {
