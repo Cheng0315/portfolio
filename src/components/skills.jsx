@@ -80,6 +80,12 @@ function Skills() {
               <h6>CSS3</h6>
             </a>
           </div>
+          <div id="sass" className='dev-logos'>
+            <a href='https://sass-lang.com/'>
+              <img src='https://cdn.svgporn.com/logos/sass.svg' alt='sass'/>
+              <h6>SASS</h6>
+            </a>
+          </div>
           <div id="jquery-logo" className='dev-logos'>
             <a href='https://jquery.com/' rel="noopener noreferrer">
               <img src='https://cdn.svgporn.com/logos/jquery.svg' alt='jquery'/>

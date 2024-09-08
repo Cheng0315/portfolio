@@ -36,17 +36,6 @@
   flex-direction: column;
 }
 
-@keyframes logos-fade-in {
-  from {
-    opacity: 0;
-    visibility: visible;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
 .dev-logos {
   opacity: 0;
   transform: translateY(20px);
@@ -110,36 +99,40 @@
   transition-delay: 2.30s;
 }
 
-#jquery-logo {
+#sass {
   transition-delay: 2.45s;
 }
 
-#tailwind-logo {
+#jquery-logo {
   transition-delay: 2.60s;
 }
 
-#bootstrap-logo {
+#tailwind-logo {
   transition-delay: 2.75s;
 }
 
-#pg-logo {
+#bootstrap-logo {
   transition-delay: 2.90s;
 }
 
-#mysql-logo {
+#pg-logo {
   transition-delay: 3.05s;
 }
 
-#mongodb-logo {
+#mysql-logo {
   transition-delay: 3.20s;
 }
 
-#git-logo {
+#mongodb-logo {
   transition-delay: 3.35s;
 }
 
-#github-logo {
+#git-logo {
   transition-delay: 3.50s;
+}
+
+#github-logo {
+  transition-delay: 3.75s;
 }
 
 @media (max-width: 374px) {
